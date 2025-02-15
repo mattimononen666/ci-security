@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest # type of vm
     steps:
       - name: Example # name of step
-        run: echo "MY_VARIABLE $MY_VARIABLE and DEMO_SECRET $MY_SECRET!"
+        run: echo "MY_VARIABLE $MY_VARIABLE and DEMO_SECRET $secrets.MY_SECRET!"
