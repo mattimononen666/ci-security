@@ -1,0 +1,12 @@
+name: Name shown in github
+run-name: Run name shown in github
+on: # Starting triggers
+  workflow_dispatch: # Click from GitHub support
+  pull_request: # After PR is created
+  push: # After commit is pushed
+jobs:
+  Example-Job: # Set of steps that are run on a VM
+    runs-on: ubuntu-latest # type of vm
+    steps:
+      - name: Example # name of step
+        run: echo "Hello!" # Actually doing the thing
